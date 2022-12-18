@@ -1,7 +1,35 @@
 :root {
   --color-navigation: #4d5ae5;
-
   --first-title-color: #2e2f42;
+  --background-color: #ffffff;
+  --background-heder: #ffffff;
+  --background-footer: #2E2F42;
+  --color-lik: #434455;
+  --color-contact: #434455;
+  --color-text: #434455;
+
+}
+.head-title-2 {font-weight: 500;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--first-title-color);}
+.head-title-3{
+  font-weight: 500; 
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);}
+.text {font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-text);}
+
+  body {
+  color: #2e2f42;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 .list {
   list-style: none;
@@ -9,29 +37,12 @@
 .link {
   text-decoration-line: none;
 }
-body {
-  color: #2e2f42;
-  font-family: "Roboto", sans-serif;
-}
--- .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .site-body {
 }
 /*------HEADER-------*/
 .header {
-  background-color: #ffffff;
+  background-color: var(--background-heder)
 }
 .header-navigation {
 }
@@ -68,12 +79,9 @@ body {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--color-lik)
 }
-.header-link:hover {
-  color: var(--color-navigation);
-}
-.header-link:focus {
+.header-link:hover, .header-link:focus {
   color: var(--color-navigation);
 }
 a.selected {
@@ -88,12 +96,9 @@ a.selected {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--color-contact);
 }
-.header-contact-link:hover {
-  color: var(--color-navigation);
-}
-.header-contact-link:focus {
+.header-contact-link:hover, .header-contact-link:focus {
   color: var(--color-navigation);
 }
 
@@ -124,11 +129,10 @@ a.selected {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.hero-btn:hover {
-  background: #404bbf;
-}
-,.hero-btn:focus: {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #404bbf;
+}
+
 }
 /*------DESCRIPTION-------*/
 .descripion {
@@ -138,31 +142,17 @@ a.selected {
 
 .descripion-item {
 }
-.description-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-  color: var(--first-title-color);
-}
+.description-title {}
+
 .description-after-title {
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
-  color: #434455;
+  
 }
 
 /*------ABOUT-------*/
 .about {
 }
 .about-title {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: calc(40 / 36);
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--first-title-color);
 }
 .about-list {
 }
@@ -173,40 +163,24 @@ a.selected {
 .team {
   background-color: #f4f4fd;
 }
-.team-title {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--first-title-color);
-}
+.team-title
+  {text-align: center;}
 .team-list {
 }
 .team-item {
   background-color: #ffffff;
 }
 .team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
   text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--first-title-color);
 }
 .team-text {
-  font-size: 16px;
-  line-height: calc(24 / 16);
   text-align: center;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 
 /*------MENU-------*/
 
 .menu {
-  background-color: #e5e5e5;
+  background-color: var(--background-color)
 }
 .menu-list {
 }
@@ -226,11 +200,7 @@ a.selected {
   cursor: pointer;
   background-color: #f4f4fd;
 }
-.menu-btn:hover {
-  color: #ffffff;
-  background-color: #4d5ae5;
-}
-.menu-btn:focus {
+.menu-btn:hover, .menu-btn:focus {
   color: #ffffff;
   background-color: #4d5ae5;
 }
@@ -240,22 +210,15 @@ a.selected {
 .menu-portfolio-item {
 }
 .menu-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-  color: var(--first-title-color);
+  
 }
 .menu-after-title {
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
-  color: #434455;
+  
 }
 
 /*------FOOTER-------*/
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--background-footer)
 }
 .footer-logo {
   font-family: "Raleway" sans-serif;
@@ -272,7 +235,7 @@ a.selected {
 .logo-footer {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: calc(24 / 18);
   display: flex;
